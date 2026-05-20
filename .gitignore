@@ -15,5 +15,6 @@ local.properties
 .DS_Store
 Thumbs.db
 
-# Screenshots captured during testing
+# Screenshots captured during testing (except repo screenshots)
 *.png
+!screenshots/*.png

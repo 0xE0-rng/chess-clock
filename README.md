@@ -1,5 +1,10 @@
 # Chess Clock
 
+<p>
+  <img src="screenshots/running.png" width="270">
+  <img src="screenshots/modes.png" width="270">
+</p>
+
 A modernized Android port of **Game Clock Deluxe** (originally `fr.kazalox.android.gameclockdeluxe`) by Kazalox — my all-time favorite chess clock app, brought back to life for current Android versions.
 
 ## Why this exists
@@ -14,7 +19,7 @@ Rather than go without, this project was created with AI assistance to produce a
 - AndroidX migration — replaces the legacy support library
 - Modern fullscreen and window insets handling
 - All clock modes and features unlocked
-- Removed promotional UI elements
+- Removed promotional UI elements (the original in-app upgrade prompts checked Google Play for a purchase record — since the app is no longer on the Play Store this check always fails, making the prompts appear permanently)
 - Minor UI polish (mode selection dialog, preferences screen)
 
 ## Building
