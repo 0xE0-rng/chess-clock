@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="pref_key_bronstein_delay_default">10</integer>
+    <integer name="pref_key_bronstein_time_default">3600</integer>
+    <integer name="pref_key_classic_time_default">1200</integer>
+    <integer name="pref_key_fide_delay_default">30</integer>
+    <integer name="pref_key_fide_nb_moves_default">40</integer>
+    <integer name="pref_key_fide_period_1_default">5400</integer>
+    <integer name="pref_key_fide_period_2_default">2400</integer>
+    <integer name="pref_key_fischer_delay_default">5</integer>
+    <integer name="pref_key_fischer_time_default">1800</integer>
+    <integer name="pref_key_hour_glass_time_default">120</integer>
+    <integer name="pref_key_simple_delay_delay_default">5</integer>
+    <integer name="pref_key_simple_delay_time_default">600</integer>
+    <integer name="pref_key_time_per_move_time_default">60</integer>
+</resources>

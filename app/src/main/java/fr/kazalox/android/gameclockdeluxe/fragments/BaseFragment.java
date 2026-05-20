@@ -1,0 +1,44 @@
+package fr.kazalox.android.gameclockdeluxe.fragments;
+
+import android.app.Activity;
+import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+
+/* JADX INFO: loaded from: classes.dex */
+public class BaseFragment extends Fragment {
+    public BaseFragmentListener mListener;
+
+    public interface BaseFragmentListener {
+    }
+
+    public static BaseFragment newInstance(Bundle b) {
+        BaseFragment f = new BaseFragment();
+        f.setArguments(b);
+        return f;
+    }
+
+    public static <T extends BaseFragment> T newInstance(Class<T> fragmentClass, Bundle b) {
+        try {
+            T f = fragmentClass.getDeclaredConstructor().newInstance();
+            f.setArguments(b);
+            return f;
+        } catch (ReflectiveOperationException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // androidx.fragment.app.Fragment
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        String listenerName = getClass().getName() + '$' + getClass().getSimpleName() + "Listener";
+        try {
+            Class<?> cls = Class.forName(listenerName);
+            if (!cls.isAssignableFrom(activity.getClass())) {
+                throw new ClassCastException(activity.toString() + " must implement " + cls.getSimpleName());
+            }
+            this.mListener = (BaseFragmentListener) activity;
+        } catch (ClassNotFoundException e) {
+        }
+    }
+}

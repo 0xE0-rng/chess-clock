@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="is_paid_version">true</bool>
+    <bool name="pref_default_moves_counter">false</bool>
+    <bool name="pref_default_negative_countdown">false</bool>
+    <bool name="pref_default_sfx">true</bool>
+    <bool name="pref_default_show_increment_elapsed">false</bool>
+    <bool name="pref_default_vibe">true</bool>
+</resources>

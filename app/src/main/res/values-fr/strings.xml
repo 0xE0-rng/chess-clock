@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">"Revenir à l'accueil"</string>
+    <string name="abc_action_bar_up_description">Revenir en haut de la page</string>
+    <string name="abc_action_menu_overflow_description">"Plus d'options"</string>
+    <string name="abc_action_mode_done">OK</string>
+    <string name="abc_activity_chooser_view_see_all">Tout afficher</string>
+    <string name="abc_activitychooserview_choose_application">Sélectionner une application</string>
+    <string name="abc_searchview_description_clear">Effacer la requête</string>
+    <string name="abc_searchview_description_query">Requête de recherche</string>
+    <string name="abc_searchview_description_search">Rechercher</string>
+    <string name="abc_searchview_description_submit">Envoyer la requête</string>
+    <string name="abc_searchview_description_voice">Recherche vocale</string>
+    <string name="abc_shareactionprovider_share_with">Partager avec</string>
+    <string name="abc_shareactionprovider_share_with_application">Partager avec %s</string>
+    <string name="clock_bonus">bonus %d</string>
+    <string name="clock_delay">délai %d</string>
+    <string name="clock_moves_counter">coup %d</string>
+    <string name="dialog_button_cancel">Annuler</string>
+    <string name="dialog_button_later">Plus tard</string>
+    <string name="dialog_button_never">Non merci</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_rate_me">Notez-moi !</string>
+    <string name="dialog_button_yes">Acheter la version illimitée</string>
+    <string name="dialog_message_exit">Voulez-vous vraiment quitter ?</string>
+    <string name="dialog_message_in_app_not_available">"Désolé, le paiement dans l'application (in-app) n'est pas disponible sur votre téléphone ou tablette. 
+
+Veuillez réessayer plus tard ou achetez directement la version Pro sur Google Play !"</string>
+    <string name="dialog_message_purchase_succesfull">"Vous êtes passé avec succès à la version Pro. 
+
+Profitez bien de toutes les nouveautés. 
+
+Merci de votre soutien."</string>
+    <string name="dialog_message_rate_me">"Si vous aimez cette application, n'hésitez pas à le faire savoir aux autres en nous accordant quelques étoiles ;)"</string>
+    <string name="dialog_message_reminder">"Vous avez utilisé cette pendule %1$d fois. 
+
+Cette application est totalement gratuite, sans publicité et ne demande aucune permission, il y a juste ce petit rappel qui s'affichera toutes les %2$d parties. 
+
+Si vous aimez cette application, pensez à acheter la version illimitée qui est dotée de fonctionnalités exclusives comme le compteur de coups (d'autres sont à venir). 
+
+Merci !"</string>
+    <string name="dialog_message_set_both_clock_at_the_same_time">"Pour vous faire gagner du temps, quand vous réglez la 1ère horloge, la 2ème est automatiquement réglée avec la même durée. 
+
+Réglez ensuite la 2ème horloge si vous souhaitez des durées différentes."</string>
+    <string name="dialog_message_tips_and_tricks">"Quand l'horloge tourne, faites un clic long ou faites simplement glisser votre doigt sur l'écran pour mettre le jeu en pause."</string>
+    <string name="dialog_message_whats_new">"Nouveautés de cette version : 
+  • la section des paramètres a été complétement revue pour être encore plus simple 
+  • nouveau mode FIDE 
+  • sauvegarde des réglages pour chaque mode de jeu 
+  • décompte de l'incrément pour les modes Bronstein et Délai Simple 
+  • possibilité de passer en version pro par paiement in-app 
+  
+Bonnes parties !"</string>
+    <string name="dialog_title_exit">Info</string>
+    <string name="dialog_title_in_app_not_available">Désolé...</string>
+    <string name="dialog_title_purchase_succesfull">Félicitations !</string>
+    <string name="dialog_title_rate_me">Notez-moi !</string>
+    <string name="dialog_title_reminder">Achetez la version illimitée!</string>
+    <string name="dialog_title_set_both_clock_at_the_same_time">Astuce</string>
+    <string name="dialog_title_tips_and_tricks">Astuce</string>
+    <string name="dialog_title_whats_new">Quoi de neuf ?</string>
+    <string name="in_app_desc">"Si vous appréciez cette pendule, passez à la version complète et débloquez les fonctionnalités suivantes : 
+  • mode Sablier 
+  • mode Temps par coup 
+  • mode FIDE 
+  • compteur de coups 
+  • décompte de l'incrément 
+ 
+Merci pour votre soutien !"</string>
+    <string name="in_app_desc_intro">"Cette fonctionnalité n'est pas disponible dans la version gratuite."</string>
+    <string name="in_app_maybe_later">Plus tard</string>
+    <string name="in_app_title">Obtenir la version Pro !</string>
+    <string name="in_app_yes">Oui !</string>
+    <string name="menu_title_reset">remise à zéro</string>
+    <string name="menu_title_settings">paramètres</string>
+    <string name="menu_title_time_settings">temps</string>
+    <string name="mode_help_bronstein">"Après chaque coup joué, un incrément de temps est ajouté à l'horloge du joueur, mais contrairement au mode Fischer, cet incrément ne peut être supérieur au temps mis par le joueur pour jouer : le temps global du joueur ne peut donc jamais augmenter. 
+
+Exemple : soit une partie réglée sur 5 minutes avec un incrément de 10 secondes 
+Si le premier joueur met moins de 10 secondes pour jouer son premier coup, son temps lors de son prochain tour sera toujours de 5 minutes. 
+Si il met plus de 10 secondes, 15 par exemple, le temps restant sera de 5 minutes - 15 secondes + 10 secondes, soit 4 minutes 55."</string>
+    <string name="mode_help_classic">"Il s'agit du mode le plus simple, dès qu'un joueur n'a plus de temps, il a perdu."</string>
+    <string name="mode_help_fide_mode">"C'est le type de cadence utilisé en compétition. 
+Elle consiste en deux périodes de temps. 
+Un nombre de coups donné doit être fait pendant la 1ère période pour pouvoir débloquer la 2ème période de temps. La 2ème période est joué en cadence Fischer (mais on peut mettre un incrément de zéro pour jouer cette période en mort subite). 
+
+Exemple : une cadence typique est 1h30 pour jouer 40 coups puis 30 minutes avec incrément Fischer de 30 secondes."</string>
+    <string name="mode_help_fischer">"Après chaque coup joué, un incrément de temps prédéterminé est ajouté à l'horloge du joueur. Contrairement au mode Bronstein, Cet incrément est toujours le même quel que soit le temps mis par le joueur pour jouer. Ainsi un joueur jouant vite peut voir son temps global augmenter. 
+
+Exemple : soit une partie réglée sur 5 minutes avec un incrément de 10 secondes 
+Si le premier joueur met 5 secondes pour jouer son premier coup, son temps lors de son prochain tour sera de 5 minutes et 5 secondes."</string>
+    <string name="mode_help_hour_glass">"Dans ce mode, le temps consommé pour jouer un coup est ajouté à l'horloge de l'adversaire. Taper la pendule correspond en fait à retourner un sablier. 
+
+Exemple : soit une partie réglée sur 2 minutes par joueur 
+Si le premier joueur met 15 secondes pour jouer son premier coup, alors le temps de son adversaire sera de 2 minutes et 15 secondes."</string>
+    <string name="mode_help_simple_delay">"Dans ce mode, un certain délai prédéterminé est attendu avant de déclencher l'horloge. 
+
+Exemple : soit une partie réglée sur 5 minutes par joueur avec un délai de 10 secondes. 
+Si le joueur met moins de 10 secondes pour jouer, l'horloge ne se déclenche pas."</string>
+    <string name="mode_help_time_per_move">"Le mode Temps par Coup permet d'avoir à chaque coup le même temps pour jouer. 
+
+Exemple : soit une partie réglée sur 2 minutes par joueur 
+Tant que les joueurs mettent moins de 2 minutes pour jouer leur coup, l'horloge revient à 2 minutes après chaque coup joué."</string>
+    <string name="mode_name_bronstein">Bronstein</string>
+    <string name="mode_name_classic">Mort subite</string>
+    <string name="mode_name_fischer">Fischer</string>
+    <string name="mode_name_hour_glass">Sablier</string>
+    <string name="mode_name_meta_mode">FIDE</string>
+    <string name="mode_name_simple_delay">Délai simple</string>
+    <string name="mode_name_time_per_move">Temps par coup</string>
+    <string name="mode_title">Mode</string>
+    <string name="ok">OK</string>
+    <string name="pref_category_mode">Mode</string>
+    <string name="pref_category_time">Temps</string>
+    <string name="pref_mode_classic">Mort subite</string>
+    <string name="pref_mode_hour_glass">Sablier</string>
+    <string name="pref_mode_simple_delay">Délai simple</string>
+    <string name="pref_mode_time_per_move">Temps par coup</string>
+    <string name="pref_summary_delay">%s secondes</string>
+    <string name="pref_summary_mode">mode %s</string>
+    <string name="pref_summary_negative_countdown">Le décompte continue après expiration du temps</string>
+    <string name="pref_summary_sfx_off">Le son est désactivé</string>
+    <string name="pref_summary_sfx_on">Le son est activé</string>
+    <string name="pref_summary_show_increment_elapsed">pour les modes Bronstein et délai simple</string>
+    <string name="pref_summary_vibe_off">Les vibrations sont désactivées</string>
+    <string name="pref_summary_vibe_on">Les vibrations sont activées</string>
+    <string name="pref_theme_analog">Analogique</string>
+    <string name="pref_theme_digital_dark">Digital sombre</string>
+    <string name="pref_theme_digital_light">Digital clair</string>
+    <string name="pref_theme_modern_dark">Moderne sombre</string>
+    <string name="pref_theme_modern_light">Moderne clair</string>
+    <string name="pref_title_clock_1">Pendule n°1</string>
+    <string name="pref_title_clock_2">Pendule n°2</string>
+    <string name="pref_title_delay">Incrément</string>
+    <string name="pref_title_mode">Mode</string>
+    <string name="pref_title_moves_counter">Compteur de coups</string>
+    <string name="pref_title_negative_countdown">Décompte négatif</string>
+    <string name="pref_title_same_times">Même temps pour la pendule n°2</string>
+    <string name="pref_title_sfx">Son</string>
+    <string name="pref_title_show_increment_elapsed">"Afficher le décompte de l'incrément"</string>
+    <string name="pref_title_theme">Thème</string>
+    <string name="pref_title_vibe">Vibrations</string>
+    <string name="settings_clock1">Pendule n°1</string>
+    <string name="settings_clock2">Pendule n°2</string>
+    <string name="settings_delay">Incrément</string>
+    <string name="settings_delay1">Incrément 1</string>
+    <string name="settings_delay2">Incrément 2</string>
+    <string name="settings_nb_moves">Nb coups</string>
+    <string name="settings_number_of_moves">Nombre de coups</string>
+    <string name="settings_period1">Période 1</string>
+    <string name="settings_period2">Période 2</string>
+    <string name="title_activity_settings">Paramètres Cadence</string>
+    <string name="toast_paused">pendule mise en pause</string>
+    <string name="toast_reset">pendule réinitialisée</string>
+</resources>

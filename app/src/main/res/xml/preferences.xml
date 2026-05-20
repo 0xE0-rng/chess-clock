@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/themes" android:title="@string/pref_title_theme" android:key="@string/pref_key_theme" android:defaultValue="0" android:entryValues="@array/themeValues" />
+    <CheckBoxPreference android:title="@string/pref_title_sfx" android:key="@string/pref_key_sfx" android:defaultValue="@bool/pref_default_sfx" />
+    <CheckBoxPreference android:title="@string/pref_title_vibe" android:key="@string/pref_key_vibe" android:defaultValue="@bool/pref_default_vibe" />
+    <CheckBoxPreference android:title="@string/pref_title_negative_countdown" android:key="@string/pref_key_negative_countdown" android:summary="@string/pref_summary_negative_countdown" android:defaultValue="@bool/pref_default_negative_countdown" />
+    <CheckBoxPreference android:title="@string/pref_title_moves_counter" android:key="@string/pref_key_moves_counter" android:defaultValue="@bool/pref_default_moves_counter" />
+    <CheckBoxPreference android:title="@string/pref_title_show_increment_elapsed" android:key="@string/pref_key_show_delay_elapsed" android:summary="@string/pref_summary_show_increment_elapsed" android:defaultValue="@bool/pref_default_show_increment_elapsed" />
+</PreferenceScreen>

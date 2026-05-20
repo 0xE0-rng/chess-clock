@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Chess Clock</string>
+    <string name="clock_bonus">bonus %d</string>
+    <string name="clock_delay">delay %d</string>
+    <string name="clock_moves_counter">move %d</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_later">Later</string>
+    <string name="dialog_button_never">No thanks</string>
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_rate_me">Rate Me!</string>
+    <string name="dialog_button_yes">Get the unlimited version</string>
+    <string name="dialog_message_exit">Do you really want to quit?</string>
+    <string name="dialog_message_in_app_not_available">"In-app payment is not currently available. 
+
+You might want to purchase directly the Pro version on Google Play!"</string>
+    <string name="dialog_message_purchase_succesfull">"You've succesfully upgraded to the Pro version. 
+
+Enjoy all the new features. 
+
+Thanks for your support!"</string>
+    <string name="dialog_message_rate_me">If you like this app, please, let others know about it and give us some stars!</string>
+    <string name="dialog_message_reminder">"You have used this chess clock %1$d times. 
+
+This app is totally free, free of ads and it does not require any permissions, there is just this little reminder that will appear after each %2$d uses. 
+
+If you appreciate this app, please consider getting the unlimited version that contains additional features such as a move counter. 
+ 
+Thanks!"</string>
+    <string name="dialog_message_set_both_clock_at_the_same_time">"To make you save time, when you set clock #1, clock #2 is automatically set with the same amount of time. 
+
+Then, set clock #2 if you want a different time setting for clock #2."</string>
+    <string name="dialog_message_tips_and_tricks">While the clock is running, perform a long click or swipe the screen with your finger to pause the game.</string>
+    <string name="dialog_message_whats_new">"New features: 
+  • revamped settings to be even more simpler 
+  • new time picker 
+  • each mode settings are individually saved 
+  • new FIDE mode 
+  • countdown for simple and Bronstein delay 
+  
+Chessly yours!"</string>
+    <string name="dialog_title_exit">Info</string>
+    <string name="dialog_title_in_app_not_available">Sorry...</string>
+    <string name="dialog_title_purchase_succesfull">Congrats!</string>
+    <string name="dialog_title_rate_me">Rate me!</string>
+    <string name="dialog_title_reminder">Get the unlimited version!</string>
+    <string name="dialog_title_set_both_clock_at_the_same_time">Tip</string>
+    <string name="dialog_title_tips_and_tricks">Tips and Tricks</string>
+    <string name="dialog_title_whats_new">"What's new?"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="in_app_desc">"If you've found this app helpful, please consider upgrading to the Pro version and unlock: 
+  • Hour Glass mode 
+  • Time per Move mode 
+  • FIDE mode 
+  • Move counter 
+  • Delay countdown 
+ 
+Thanks for your support!"</string>
+    <string name="in_app_desc_intro">This feature is not available in the free version.</string>
+    <string name="in_app_maybe_later">Maybe later</string>
+    <string name="in_app_title">Get full upgrade?</string>
+    <string name="in_app_yes">Yes!</string>
+    <string name="menu_title_reset">reset</string>
+    <string name="menu_title_settings">settings</string>
+    <string name="menu_title_time_settings">time settings</string>
+    <string name="mode_help_bronstein">"With the Bronstein timing method, the increment is always added after the move. But unlike Fischer, not always the maximum increment is added. If a player expends more than the specified increment, then the entire increment is added to the player's clock. But if a player has moved faster than the time increment, only the exact amount of time expended by the player is added. For example, if the delay is five seconds, the player has ten seconds left in his clock before his turn and during his turn he spends three seconds, after he presses the clock button to indicate the end of his turn, his clock increases by only three seconds (not five). (In "<i>Wikipedia</i>)</string>
+    <string name="mode_help_classic">"This is the simplest time control. Once a player's main time expires, he loses the game. (In "<i>Wikipedia</i>)</string>
+    <string name="mode_help_fide_mode">"In this mode, you have to make a given number of moves in a given amount of time before unlocking extra-time. The extra-time is played in Fischer mode, after each mode a delay is added. 
+
+A common time control used in FIDE tournaments is 90 minutes for the first 40 moves followed by 30 minutes for the rest of the game with an addition of 30 seconds per move starting from move one. (In "<i>Wikipedia</i>)</string>
+    <string name="mode_help_fischer">"Before a player has made his move, a specified time increment is added to his clock. Time can be accumulated, so if the player moves within the delay period, his remaining time actually increases. For example, if the delay time is five seconds, and a player has four seconds left on his clock, as soon as his opponent moves, he receives the increment and has nine seconds to make a move. If he takes two seconds to move, on the start of his next move he has twelve seconds. There is also a variant of this time control that adds the delay after a player makes his move (Fischer after), so the delay is added to the player's remaining time and is available for his next move. If however time runs out during his move, the game ends without the delay time being added. This variant prevents the player who is in time-trouble to take advantage of the extra-time. (In "<i>Wikipedia</i>)</string>
+    <string name="mode_help_hour_glass">"A player loses in this time control when he allows the difference between both clocks to reach the specified total amount. For example, if the total is defined as one minute, both players start their clocks at thirty seconds. Every second the first player uses to think in his moves is subtracted from his clock and added to his opponent's clock. If he uses thirty seconds to move, the difference between the clocks reaches one minute, and the time flag falls to indicate that he loses by time. If he has used twenty nine seconds and then pushes the clock's button, he has one second left on his clock and his opponent has fifty-nine seconds. (In "<i>Wikipedia</i>)</string>
+    <string name="mode_help_simple_delay">"When it becomes a player's turn to move, the clock waits for the delay period before starting to subtract from the player's remaining time. For example, if the delay is five seconds, the clock waits for five seconds before counting down. The time is not accumulated. If the player moves within the delay period, no time is subtracted from his remaining time. This time control is similar to a Bronstein with time added before the move. (In "<i>Wikipedia</i>)</string>
+    <string name="mode_help_time_per_move">For each move, players have the same amount of time to play.</string>
+    <string name="mode_name_bronstein">Bronstein</string>
+    <string name="mode_name_classic">Sudden Death</string>
+    <string name="mode_name_fischer">Fischer</string>
+    <string name="mode_name_hour_glass">Hour Glass</string>
+    <string name="mode_name_meta_mode">FIDE</string>
+    <string name="mode_name_simple_delay">Simple delay</string>
+    <string name="mode_name_time_per_move">Time per Move</string>
+    <string name="mode_title">Mode</string>
+    <string name="ok">OK</string>
+    <string name="pref_category_mode">Mode</string>
+    <string name="pref_category_time">Time</string>
+    <string name="pref_key_bronstein_delay">pref_key_bronstein_delay</string>
+    <string name="pref_key_bronstein_time_1">pref_key_bronstein_time_1</string>
+    <string name="pref_key_bronstein_time_2">pref_key_bronstein_time_2</string>
+    <string name="pref_key_classic_time_1">pref_key_classic_time_1</string>
+    <string name="pref_key_classic_time_2">pref_key_classic_time_2</string>
+    <string name="pref_key_dialog_please_rate_last_ts">pref_key_dialog_please_rate_last_ts</string>
+    <string name="pref_key_dialog_show_clocks_setting_tip">pref_key_dialog_show_clocks_setting_tip</string>
+    <string name="pref_key_dialog_show_please_rate">pref_key_dialog_show_please_rate</string>
+    <string name="pref_key_dialog_show_tips_and_tricks">pref_key_dialog_show_tips_and_tricks</string>
+    <string name="pref_key_dialog_show_whats_new_1">pref_key_dialog_show_whats_new_1</string>
+    <string name="pref_key_fide_delay">pref_key_fide_delay</string>
+    <string name="pref_key_fide_nb_moves">pref_key_fide_nb_moves</string>
+    <string name="pref_key_fide_period_1">pref_key_fide_period_1</string>
+    <string name="pref_key_fide_period_2">pref_key_fide_period_2</string>
+    <string name="pref_key_first_use">pref_key_first_use_1</string>
+    <string name="pref_key_fischer_delay">pref_key_fischer_delay</string>
+    <string name="pref_key_fischer_time_1">pref_key_fischer_time_1</string>
+    <string name="pref_key_fischer_time_2">pref_key_fischer_time_2</string>
+    <string name="pref_key_hour_glass_time_1">pref_key_hour_glass_time_1</string>
+    <string name="pref_key_hour_glass_time_2">pref_key_hour_glass_time_2</string>
+    <string name="pref_key_mode_id">pref_key_mode</string>
+    <string name="pref_key_moves_counter">pref_key_moves_counter</string>
+    <string name="pref_key_nb_uses">pref_key_nb_uses</string>
+    <string name="pref_key_negative_countdown">pref_key_negative_countdown</string>
+    <string name="pref_key_sfx">pref_key_sound_on</string>
+    <string name="pref_key_show_delay_elapsed">pref_key_show_increment_elapsed</string>
+    <string name="pref_key_simple_delay_delay">pref_key_simple_delay_delay</string>
+    <string name="pref_key_simple_delay_time_1">pref_key_simple_delay_time_1</string>
+    <string name="pref_key_simple_delay_time_2">pref_key_simple_delay_time_2</string>
+    <string name="pref_key_theme">pref_key_theme</string>
+    <string name="pref_key_time_per_move_time_1">pref_key_time_per_move_time_1</string>
+    <string name="pref_key_time_per_move_time_2">pref_key_time_per_move_time_2</string>
+    <string name="pref_key_vibe">pref_key_vibe_on</string>
+    <string name="pref_mode_bronstein">Bronstein</string>
+    <string name="pref_mode_classic">Sudden Death</string>
+    <string name="pref_mode_fischer">Fischer</string>
+    <string name="pref_mode_hour_glass">Hour Glass</string>
+    <string name="pref_mode_simple_delay">Simple delay</string>
+    <string name="pref_mode_time_per_move">Time per Move</string>
+    <string name="pref_summary_delay">%1$d seconds</string>
+    <string name="pref_summary_mode">%s mode</string>
+    <string name="pref_summary_negative_countdown">Countdown goes on after time expiration</string>
+    <string name="pref_summary_sfx_off">Sound is off</string>
+    <string name="pref_summary_sfx_on">Sound is on</string>
+    <string name="pref_summary_show_increment_elapsed">for Bronstein and Simple delay modes</string>
+    <string name="pref_summary_vibe_off">Vibrations are off</string>
+    <string name="pref_summary_vibe_on">Vibrations are on</string>
+    <string name="pref_theme_analog">Analog</string>
+    <string name="pref_theme_digital_dark">Digital dark</string>
+    <string name="pref_theme_digital_light">Digital light</string>
+    <string name="pref_theme_modern_dark">Modern dark</string>
+    <string name="pref_theme_modern_light">Modern light</string>
+    <string name="pref_title_clock_1">Clock #1</string>
+    <string name="pref_title_clock_2">Clock #2</string>
+    <string name="pref_title_delay">Delay</string>
+    <string name="pref_title_mode">Mode</string>
+    <string name="pref_title_moves_counter">Moves counter</string>
+    <string name="pref_title_negative_countdown">Negative countdown</string>
+    <string name="pref_title_same_times">Same time for Clock #2</string>
+    <string name="pref_title_sfx">Sound</string>
+    <string name="pref_title_show_increment_elapsed">Show delay countdown</string>
+    <string name="pref_title_theme">Theme</string>
+    <string name="pref_title_vibe">Vibrations</string>
+    <string name="settings_clock1">Clock #1</string>
+    <string name="settings_clock2">Clock #2</string>
+    <string name="settings_delay">Delay</string>
+    <string name="settings_delay1">Delay #1</string>
+    <string name="settings_delay2">Delay #2</string>
+    <string name="settings_nb_moves">Moves</string>
+    <string name="settings_number_of_moves">Number of moves</string>
+    <string name="settings_period1">Period #1</string>
+    <string name="settings_period2">Period #2</string>
+    <string name="title_activity_in_app">InAppActivity</string>
+    <string name="title_activity_mode">ModeActivity</string>
+    <string name="title_activity_settings">Time Settings</string>
+    <string name="title_activity_test_font">TestFont</string>
+    <string name="title_activity_time_picker">Time</string>
+    <string name="toast_paused">chess clock paused</string>
+    <string name="toast_reset">chess clock reset</string>
+    <string name="url_market">market://details?id=fr.kazalox.android.gameclockdeluxe</string>
+</resources>

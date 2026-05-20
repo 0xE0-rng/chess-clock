@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutTime" android:padding="@dimen/digital_picker_main_time_margin" android:layout_width="match_parent" android:layout_height="@dimen/digital_picker_main_time_height">
+        <fr.kazalox.android.gameclockdeluxe.views.AutoSizeTextView android:ellipsize="none" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvTime" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_marginLeft="20.0dp" android:text="00:00:00" android:singleLine="true" android:layout_weight="10.0" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/ivBackspace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dp" android:src="@drawable/ic_backspace" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@drawable/divider" android:layout_width="match_parent" android:layout_height="1.0dp" android:layout_marginTop="@dimen/digital_picker_main_time_margin" android:layout_marginBottom="10.0dp" android:layout_below="@id/layoutTime" />
+    <Button android:textStyle="bold" android:gravity="center" android:id="@id/btOk" android:padding="10.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:text="@string/ok" android:layout_alignParentBottom="true" />
+    <fr.kazalox.android.gameclockdeluxe.views.DigitPad android:id="@id/digitPad" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_above="@id/btOk" android:layout_below="@id/divider" />
+</RelativeLayout>

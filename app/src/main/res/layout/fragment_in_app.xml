@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dp" android:text="@string/in_app_title" />
+    <View android:background="#ffa0" android:layout_width="match_parent" android:layout_height="2.0dp" />
+    <ScrollView android:layout_width="wrap_content" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/tvInAppDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dp" android:text="@string/in_app_desc" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btCancel" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/in_app_maybe_later" android:layout_weight="1.0" />
+        <Button android:id="@id/btOk" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="@string/in_app_yes" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>
