@@ -1,0 +1,19 @@
+# Build outputs
+/build/
+app/build/
+
+# Gradle
+.gradle/
+local.properties
+
+# Android Studio
+*.iml
+.idea/
+*.hprof
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Screenshots captured during testing
+*.png

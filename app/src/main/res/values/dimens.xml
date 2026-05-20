@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16.0dp</dimen>
+    <dimen name="activity_vertical_margin">16.0dp</dimen>
+    <dimen name="checkbox_preference_paddingLeft">0.0dp</dimen>
+    <dimen name="digital_picker_main_time_height">100.0dp</dimen>
+    <dimen name="digital_picker_main_time_margin">5.0dp</dimen>
+</resources>

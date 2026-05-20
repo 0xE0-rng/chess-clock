@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="modeValues">
+        <item>@string/pref_mode_classic</item>
+        <item>@string/pref_mode_fischer</item>
+        <item>@string/pref_mode_bronstein</item>
+        <item>@string/pref_mode_simple_delay</item>
+        <item>@string/pref_mode_time_per_move</item>
+        <item>@string/pref_mode_hour_glass</item>
+    </string-array>
+    <string-array name="modes">
+        <item>@string/pref_mode_classic</item>
+        <item>@string/pref_mode_fischer</item>
+        <item>@string/pref_mode_bronstein</item>
+        <item>@string/pref_mode_simple_delay</item>
+        <item>@string/pref_mode_time_per_move</item>
+        <item>@string/pref_mode_hour_glass</item>
+    </string-array>
+    <string-array name="themeValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="themes">
+        <item>@string/pref_theme_digital_light</item>
+        <item>@string/pref_theme_digital_dark</item>
+        <item>@string/pref_theme_modern_light</item>
+        <item>@string/pref_theme_modern_dark</item>
+        <item>@string/pref_theme_analog</item>
+    </string-array>
+</resources>
