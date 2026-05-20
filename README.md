@@ -1,7 +1,8 @@
 # Chess Clock
 
-<p>
+<p align="center">
   <img src="screenshots/running.png" width="270">
+  &nbsp;&nbsp;
   <img src="screenshots/modes.png" width="270">
 </p>
 
