@@ -1,6 +1,5 @@
 package fr.kazalox.android.gameclockdeluxe.activities;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Vibrator;
@@ -10,12 +9,9 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.util.Log;
-import fr.kazalox.android.gameclockdeluxe.App;
-import fr.kazalox.android.gameclockdeluxe.C;
 import fr.kazalox.android.gameclockdeluxe.Prefs;
 import fr.kazalox.android.gameclockdeluxe.R;
 
-/* JADX INFO: loaded from: classes.dex */
 public class PrefActivity extends PreferenceActivity implements Preference.OnPreferenceClickListener {
     ListPreference mClockTheme;
     String[] mClockThemeArray;
@@ -56,7 +52,6 @@ public class PrefActivity extends PreferenceActivity implements Preference.OnPre
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
     public void updateClockTheme(int themeId) {
         if (themeId < 0) {
             String sThemeId = Prefs.getString(R.string.pref_key_theme, "0");
@@ -69,12 +64,6 @@ public class PrefActivity extends PreferenceActivity implements Preference.OnPre
 
     @Override // android.preference.Preference.OnPreferenceClickListener
     public boolean onPreferenceClick(Preference preference) {
-        if (!App.hasProVersion()) {
-            ((CheckBoxPreference) preference).setChecked(false);
-            Intent i = new Intent(this, (Class<?>) InAppActivity.class);
-            i.putExtra(C.ARG_FEATURE_NOT_AVAILABLE, true);
-            startActivityForResult(i, 1);
-        }
         return true;
     }
 }

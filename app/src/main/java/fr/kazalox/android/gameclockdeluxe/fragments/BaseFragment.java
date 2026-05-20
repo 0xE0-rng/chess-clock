@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
-/* JADX INFO: loaded from: classes.dex */
 public class BaseFragment extends Fragment {
     public BaseFragmentListener mListener;
 
@@ -27,7 +26,6 @@ public class BaseFragment extends Fragment {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     @Override // androidx.fragment.app.Fragment
     public void onAttach(Activity activity) {
         super.onAttach(activity);

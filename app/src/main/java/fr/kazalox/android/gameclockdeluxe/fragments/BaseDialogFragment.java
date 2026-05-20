@@ -5,7 +5,6 @@ import android.os.Bundle;
 import androidx.fragment.app.DialogFragment;
 import android.util.Log;
 
-/* JADX INFO: loaded from: classes.dex */
 public class BaseDialogFragment extends DialogFragment {
     protected BaseFragmentListener mListener;
 
@@ -28,7 +27,6 @@ public class BaseDialogFragment extends DialogFragment {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     @Override // androidx.fragment.app.DialogFragment, androidx.fragment.app.Fragment
     public void onAttach(Activity activity) {
         super.onAttach(activity);

@@ -18,7 +18,6 @@ import fr.kazalox.android.gameclockdeluxe.utils.MetricUtils;
 import fr.kazalox.android.gameclockdeluxe.views.AnalogClock;
 import java.util.Observable;
 
-/* JADX INFO: loaded from: classes.dex */
 public class AnalogClockFragment extends ClockFragment implements View.OnTouchListener, View.OnLongClickListener, ViewTreeObserver.OnPreDrawListener {
     private AnalogClock mAnalogClock;
     private boolean mFirstDisplay;

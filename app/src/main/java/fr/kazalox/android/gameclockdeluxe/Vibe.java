@@ -3,7 +3,6 @@ package fr.kazalox.android.gameclockdeluxe;
 import android.content.Context;
 import android.os.Vibrator;
 
-/* JADX INFO: loaded from: classes.dex */
 public class Vibe {
     public static final int CLICK = 1;
     public static final int END = 2;

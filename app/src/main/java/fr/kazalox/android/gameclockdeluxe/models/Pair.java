@@ -2,7 +2,6 @@ package fr.kazalox.android.gameclockdeluxe.models;
 
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes.dex */
 public class Pair<E> implements Serializable {
     private static final long serialVersionUID = -7296184260800291438L;
     public final E first;

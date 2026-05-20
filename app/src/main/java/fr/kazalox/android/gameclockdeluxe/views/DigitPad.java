@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import fr.kazalox.android.gameclockdeluxe.R;
 
-/* JADX INFO: loaded from: classes.dex */
 public class DigitPad extends ViewGroup implements View.OnClickListener {
     private DigitPadListener mListener;
 

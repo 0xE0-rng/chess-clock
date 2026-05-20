@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import fr.kazalox.android.gameclockdeluxe.R;
 import fr.kazalox.android.gameclockdeluxe.models.Timer;
 
-/* JADX INFO: loaded from: classes.dex */
 public class AnalogClock extends ViewGroup {
     private BitmapDrawable mBackgroundLeft;
     private BitmapDrawable mBackgroundRight;

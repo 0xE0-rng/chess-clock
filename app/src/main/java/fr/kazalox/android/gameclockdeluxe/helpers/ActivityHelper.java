@@ -9,7 +9,6 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import fr.kazalox.android.gameclockdeluxe.activities.BaseActivity;
 
-/* JADX INFO: loaded from: classes.dex */
 public class ActivityHelper {
     public static <T extends BaseActivity> void start(FragmentActivity src, Class<T> target) {
         start(src, target, false);

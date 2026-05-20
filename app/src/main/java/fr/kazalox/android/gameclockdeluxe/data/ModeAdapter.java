@@ -10,7 +10,6 @@ import android.widget.TextView;
 import fr.kazalox.android.gameclockdeluxe.R;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
 public class ModeAdapter extends ArrayAdapter<Mode> implements View.OnClickListener {
     private final Activity mContext;
     private ModeAdapterListener mListener;
@@ -22,7 +21,6 @@ public class ModeAdapter extends ArrayAdapter<Mode> implements View.OnClickListe
 
     static class ViewHolder {
         public ImageView ivHelp;
-        public ImageView ivPro;
         public TextView tv;
 
         ViewHolder() {
@@ -45,7 +43,6 @@ public class ModeAdapter extends ArrayAdapter<Mode> implements View.OnClickListe
             ViewHolder holder = new ViewHolder();
             holder.tv = (TextView) rowView.findViewById(R.id.tv);
             holder.ivHelp = (ImageView) rowView.findViewById(R.id.ivHelp);
-            holder.ivPro = (ImageView) rowView.findViewById(R.id.ivPro);
             rowView.setTag(holder);
         }
         ViewHolder holder2 = (ViewHolder) rowView.getTag();
@@ -54,7 +51,6 @@ public class ModeAdapter extends ArrayAdapter<Mode> implements View.OnClickListe
         holder2.ivHelp.setImageResource(R.drawable.ic_action_help);
         holder2.ivHelp.setTag(mode);
         holder2.ivHelp.setOnClickListener(this);
-        holder2.ivPro.setVisibility(View.GONE);
         return rowView;
     }
 

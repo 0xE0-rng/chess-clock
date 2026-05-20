@@ -5,7 +5,6 @@ import android.graphics.Canvas;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes.dex */
 public class ReversedTextView extends TextView {
     public ReversedTextView(Context context) {
         super(context);

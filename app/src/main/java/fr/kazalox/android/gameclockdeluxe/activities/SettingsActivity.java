@@ -1,8 +1,6 @@
 package fr.kazalox.android.gameclockdeluxe.activities;
 
-import android.content.Intent;
 import android.os.Bundle;
-import fr.kazalox.android.gameclockdeluxe.App;
 import fr.kazalox.android.gameclockdeluxe.C;
 import fr.kazalox.android.gameclockdeluxe.Prefs;
 import fr.kazalox.android.gameclockdeluxe.R;
@@ -14,7 +12,6 @@ import fr.kazalox.android.gameclockdeluxe.dialogs.TimePickerDialog;
 import fr.kazalox.android.gameclockdeluxe.fragments.SettingsFragment;
 import fr.kazalox.android.gameclockdeluxe.helpers.FragmentHelper;
 
-/* JADX INFO: loaded from: classes.dex */
 public class SettingsActivity extends BaseActivity implements SettingsFragment.SettingsFragmentListener, ModeListDialog.ModeListDialogListener, TimePickerDialog.TimePickerDialogListener, NbMovesDialog.NbMovesDialogListener {
     private Mode mMode;
 
@@ -107,16 +104,10 @@ public class SettingsActivity extends BaseActivity implements SettingsFragment.S
     public void onModeListClick(Mode mode) {
         mode.fetchPreferences();
         this.mMode = mode;
-        if (!mode.isFree() && !App.hasProVersion()) {
-            Intent i = new Intent(this, (Class<?>) InAppActivity.class);
-            i.putExtra(C.ARG_FEATURE_NOT_AVAILABLE, true);
-            startActivity(i);
-        } else {
-            Prefs.putInt(R.string.pref_key_mode_id, this.mMode.getId());
-            SettingsFragment f = (SettingsFragment) getSupportFragmentManager().findFragmentByTag(SettingsFragment.class.getSimpleName());
-            if (f != null) {
-                f.updateMode(this.mMode);
-            }
+        Prefs.putInt(R.string.pref_key_mode_id, this.mMode.getId());
+        SettingsFragment f = (SettingsFragment) getSupportFragmentManager().findFragmentByTag(SettingsFragment.class.getSimpleName());
+        if (f != null) {
+            f.updateMode(this.mMode);
         }
     }
 

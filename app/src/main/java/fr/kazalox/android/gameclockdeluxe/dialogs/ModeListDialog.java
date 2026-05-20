@@ -13,7 +13,6 @@ import fr.kazalox.android.gameclockdeluxe.data.Mode;
 import fr.kazalox.android.gameclockdeluxe.data.ModeAdapter;
 import fr.kazalox.android.gameclockdeluxe.fragments.BaseDialogFragment;
 
-/* JADX INFO: loaded from: classes.dex */
 public class ModeListDialog extends BaseDialogFragment implements AdapterView.OnItemClickListener, ModeAdapter.ModeAdapterListener {
 
     public interface ModeListDialogListener extends BaseDialogFragment.BaseFragmentListener {

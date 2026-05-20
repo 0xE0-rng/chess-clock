@@ -11,7 +11,6 @@ import fr.kazalox.android.gameclockdeluxe.models.Pair;
 import fr.kazalox.android.gameclockdeluxe.models.Timer;
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes.dex */
 public class ClockManager implements Timer.TimerListener, Serializable, SharedPreferences.OnSharedPreferenceChangeListener {
     private static final long serialVersionUID = -1800988266794412338L;
     private transient Context mContext;
@@ -38,7 +37,6 @@ public class ClockManager implements Timer.TimerListener, Serializable, SharedPr
         GAME_OVER
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     public ClockManager(Activity activity) {
         this.mContext = activity.getApplicationContext();
         this.mListener = (ClockManagerListener) activity;
@@ -52,7 +50,6 @@ public class ClockManager implements Timer.TimerListener, Serializable, SharedPr
         updateMode();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     public void reInit(Activity activity) {
         this.mContext = activity.getApplicationContext();
         this.mListener = (ClockManagerListener) activity;

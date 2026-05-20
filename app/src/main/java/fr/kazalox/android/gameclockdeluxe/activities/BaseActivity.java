@@ -7,7 +7,6 @@ import android.view.GestureDetector;
 import android.widget.Toast;
 import fr.kazalox.android.gameclockdeluxe.views.SwipeDetector;
 
-/* JADX INFO: loaded from: classes.dex */
 public class BaseActivity extends AppCompatActivity implements SwipeDetector.SwipeListener {
     private boolean mCommitable;
     private GestureDetector mGestureDetector;

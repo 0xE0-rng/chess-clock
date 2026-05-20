@@ -12,7 +12,6 @@ import fr.kazalox.android.gameclockdeluxe.C;
 import fr.kazalox.android.gameclockdeluxe.R;
 import fr.kazalox.android.gameclockdeluxe.fragments.BaseDialogFragment;
 
-/* JADX INFO: loaded from: classes.dex */
 public class NbMovesDialog extends BaseDialogFragment {
     private int mNbMoves;
 

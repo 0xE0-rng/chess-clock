@@ -7,7 +7,6 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import androidx.fragment.app.DialogFragment;
 
-/* JADX INFO: loaded from: classes.dex */
 public class SimpleDialog extends DialogFragment {
     public static final String ARG_BUTTON_1 = "ARG_BUTTON_1";
     public static final String ARG_BUTTON_2 = "ARG_BUTTON_2";
@@ -44,7 +43,6 @@ public class SimpleDialog extends DialogFragment {
         return d;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
     @Override // androidx.fragment.app.DialogFragment, androidx.fragment.app.Fragment
     public void onAttach(Activity activity) {
         super.onAttach(activity);

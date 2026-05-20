@@ -12,7 +12,6 @@ import fr.kazalox.android.gameclockdeluxe.data.Mode;
 import fr.kazalox.android.gameclockdeluxe.fragments.BaseFragment;
 import fr.kazalox.android.gameclockdeluxe.utils.TimeUtils;
 
-/* JADX INFO: loaded from: classes.dex */
 public class SettingsFragment extends BaseFragment implements View.OnClickListener {
     private Button mBtIncrement;
     private Button mBtIncrement2;

@@ -23,12 +23,6 @@
         <activity
             android:name="fr.kazalox.android.gameclockdeluxe.activities.PrefActivity"
             android:exported="false"/>
-        <activity
-            android:label="@string/in_app_title"
-            android:name="fr.kazalox.android.gameclockdeluxe.activities.InAppActivity"
-            android:theme="@style/AppTheme.Dialog"
-            android:exported="false"/>
     </application>
     <supports-screens android:largeScreens="true" android:normalScreens="true" android:smallScreens="false"/>
-    <uses-permission android:name="com.android.vending.BILLING"/>
 </manifest>

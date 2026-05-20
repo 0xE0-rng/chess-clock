@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-/* JADX INFO: loaded from: classes.dex */
 public class Prefs {
     public static final String FIRST_TIME = "FIRST_TIME";
     private static Context sContext;

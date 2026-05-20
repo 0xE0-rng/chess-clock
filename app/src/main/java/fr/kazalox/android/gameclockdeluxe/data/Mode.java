@@ -7,7 +7,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
 public class Mode implements Serializable {
     public static final int BRONSTEIN = 2;
     public static final int CLASSIC = 0;

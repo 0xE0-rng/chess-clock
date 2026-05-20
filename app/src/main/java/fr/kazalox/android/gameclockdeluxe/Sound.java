@@ -3,7 +3,6 @@ package fr.kazalox.android.gameclockdeluxe;
 import android.content.Context;
 import android.media.SoundPool;
 
-/* JADX INFO: loaded from: classes.dex */
 public class Sound {
     public static final int CLICK = 2;
     public static final int COUNT_DOWN = 1;

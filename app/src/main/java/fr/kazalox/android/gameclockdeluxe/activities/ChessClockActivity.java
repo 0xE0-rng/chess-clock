@@ -23,29 +23,20 @@ import fr.kazalox.android.gameclockdeluxe.fragments.AnalogClockFragment;
 import fr.kazalox.android.gameclockdeluxe.fragments.ClockFragment;
 import fr.kazalox.android.gameclockdeluxe.fragments.DigitalClockFragment;
 import fr.kazalox.android.gameclockdeluxe.helpers.FragmentHelper;
-import fr.kazalox.android.gameclockdeluxe.inapp.IabHelper;
-import fr.kazalox.android.gameclockdeluxe.inapp.IabResult;
-import fr.kazalox.android.gameclockdeluxe.inapp.Inventory;
-import fr.kazalox.android.gameclockdeluxe.inapp.Purchase;
 import fr.kazalox.android.gameclockdeluxe.managers.ClockManager;
 import fr.kazalox.android.gameclockdeluxe.models.Timer;
 import fr.kazalox.android.gameclockdeluxe.utils.MetricUtils;
 
-/* JADX INFO: loaded from: classes.dex */
 @TargetApi(11)
-public class ChessClockActivity extends BaseActivity implements DigitalClockFragment.DigitalClockFragmentListener, SimpleDialog.SimpleDialogListener, ClockManager.ClockManagerListener, AnalogClockFragment.AnalogClockFragmentListener, IabHelper.OnIabSetupFinishedListener, IabHelper.QueryInventoryFinishedListener {
-    private static final String KEY_CHECK_UPGRADE_DONE = "KEY_CHECK_UPGRADE_DONE";
+public class ChessClockActivity extends BaseActivity implements DigitalClockFragment.DigitalClockFragmentListener, SimpleDialog.SimpleDialogListener, ClockManager.ClockManagerListener, AnalogClockFragment.AnalogClockFragmentListener {
     private static final String KEY_CLOCK_MANAGER = "KEY_CLOCK_MANAGER";
     private static final String KEY_THEME_ID = "KEY_THEME_ID";
     private static final String TAG_CLOCK_1 = "TAG_CLOCK_1";
     private static final String TAG_CLOCK_2 = "TAG_CLOCK_2";
-    private boolean mCheckFullUpgradeDone;
     private ClockManager mClockManager;
     private View mDecorView;
     private float mDistance;
     private boolean mFullScreen;
-    private IabHelper mHelper;
-    private boolean mShowUpgradeDialogLater;
     private int mSwipeThreshold;
     private PointF mOldPoint = new PointF();
     private PointF mNewPoint = new PointF();
@@ -66,13 +57,9 @@ public class ChessClockActivity extends BaseActivity implements DigitalClockFrag
             this.mCurrentTheme = -1;
             this.mClockManager = new ClockManager(this);
         } else {
-            this.mCheckFullUpgradeDone = savedInstanceState.getBoolean(KEY_CHECK_UPGRADE_DONE);
             this.mCurrentTheme = savedInstanceState.getInt(KEY_THEME_ID);
             this.mClockManager = (ClockManager) savedInstanceState.getSerializable(KEY_CLOCK_MANAGER);
             this.mClockManager.reInit(this);
-        }
-        if (!this.mCheckFullUpgradeDone && !App.isPaidVersion()) {
-            initInApp();
         }
         checkDialogToShow();
         setVolumeControlStream(3);
@@ -208,7 +195,6 @@ public class ChessClockActivity extends BaseActivity implements DigitalClockFrag
     @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putBoolean(KEY_CHECK_UPGRADE_DONE, this.mCheckFullUpgradeDone);
         outState.putSerializable(KEY_CLOCK_MANAGER, this.mClockManager);
         outState.putInt(KEY_THEME_ID, this.mCurrentTheme);
     }
@@ -230,11 +216,6 @@ public class ChessClockActivity extends BaseActivity implements DigitalClockFrag
 
     @Override // fr.kazalox.android.gameclockdeluxe.managers.ClockManager.ClockManagerListener
     public void onClockManagerReminder() {
-        if (isCommitable()) {
-            showUpgradeDialog();
-        } else {
-            this.mShowUpgradeDialogLater = true;
-        }
     }
 
     private void checkDialogToShow() {
@@ -265,22 +246,11 @@ public class ChessClockActivity extends BaseActivity implements DigitalClockFrag
     protected void onPostResume() {
         super.onPostResume();
         this.mClockManager.resume();
-        if (this.mShowUpgradeDialogLater) {
-            showUpgradeDialog();
-            this.mShowUpgradeDialogLater = false;
-        }
     }
 
     private void showRateMeDialog() {
         SimpleDialog d = SimpleDialog.newInstance(getString(R.string.dialog_title_rate_me), getString(R.string.dialog_message_rate_me), getString(R.string.dialog_button_rate_me), getString(R.string.dialog_button_never), getString(R.string.dialog_button_later));
         d.show(getSupportFragmentManager(), C.DIALOG_TAG_RATE_ME);
-    }
-
-    public void showUpgradeDialog() {
-        if (!App.hasProVersion()) {
-            Intent i = new Intent(this, (Class<?>) InAppActivity.class);
-            startActivityForResult(i, 1);
-        }
     }
 
     public void showQuitDialog() {
@@ -302,7 +272,7 @@ public class ChessClockActivity extends BaseActivity implements DigitalClockFrag
     public void onButton1Click(DialogFragment dialog) {
         if (dialog.getTag().equals(C.DIALOG_TAG_QUIT)) {
             finish();
-        } else if (!dialog.getTag().equals(C.DIALOG_TAG_UPGRADE) && dialog.getTag().equals(C.DIALOG_TAG_RATE_ME)) {
+        } else if (dialog.getTag().equals(C.DIALOG_TAG_RATE_ME)) {
             startActivity(new Intent("android.intent.action.VIEW", Uri.parse(getString(R.string.url_market))));
             Prefs.putBoolean(R.string.pref_key_dialog_show_please_rate, false);
         }
@@ -325,44 +295,4 @@ public class ChessClockActivity extends BaseActivity implements DigitalClockFrag
     public void onButton3Click(DialogFragment dialog) {
     }
 
-    private void initInApp() {
-        Log.d("ChessClock", "Creating IAB helper.");
-        this.mHelper = new IabHelper(this, C.SETTINGS_ACTIVITY + C.LOG_PREFIX + C.TEST + C.TEST_2);
-        this.mHelper.startSetup(this);
-    }
-
-    @Override // fr.kazalox.android.gameclockdeluxe.inapp.IabHelper.OnIabSetupFinishedListener
-    public void onIabSetupFinished(IabResult result) {
-        Log.d("ChessClock", "Setup finished.");
-        if (!result.isSuccess()) {
-            Log.d("ChessClock", "SplashActivity - onIabSetupFinished - setup error " + result);
-        } else if (this.mHelper != null) {
-            Log.d("ChessClock", "Setup successful. Querying inventory.");
-            this.mHelper.queryInventoryAsync(this);
-        }
-    }
-
-    @Override // fr.kazalox.android.gameclockdeluxe.inapp.IabHelper.QueryInventoryFinishedListener
-    public void onQueryInventoryFinished(IabResult result, Inventory inventory) {
-        Log.d("ChessClock", "Query inventory finished.");
-        if (this.mHelper == null || result.isFailure()) {
-            Log.d("ChessClock", "Failed to query inventory: " + result);
-            return;
-        }
-        Log.d("ChessClock", "Query inventory was successful.");
-        Purchase fullUpgradePurchase = inventory.getPurchase(C.SKU_FULL_UPGRADE);
-        Log.d("ChessClock", "Query inventory was successful. fullUpgradePurchase : " + fullUpgradePurchase);
-        App.setFullUpgrade(fullUpgradePurchase != null);
-        this.mCheckFullUpgradeDone = true;
-    }
-
-    @Override // fr.kazalox.android.gameclockdeluxe.activities.BaseActivity, androidx.fragment.app.FragmentActivity, android.app.Activity
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d("ChessClock", "Destroying helper.");
-        if (this.mHelper != null) {
-            this.mHelper.dispose();
-            this.mHelper = null;
-        }
-    }
 }

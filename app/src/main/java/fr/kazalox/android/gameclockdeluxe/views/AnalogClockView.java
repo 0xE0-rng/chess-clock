@@ -17,7 +17,6 @@ import fr.kazalox.android.gameclockdeluxe.R;
 import fr.kazalox.android.gameclockdeluxe.models.Timer;
 import fr.kazalox.android.gameclockdeluxe.utils.TimeUtils;
 
-/* JADX INFO: loaded from: classes.dex */
 public class AnalogClockView extends View {
     private static final float PI = 3.1415f;
     private int mAngle;

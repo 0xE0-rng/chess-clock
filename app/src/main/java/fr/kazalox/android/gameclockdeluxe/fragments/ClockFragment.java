@@ -4,7 +4,6 @@ import fr.kazalox.android.gameclockdeluxe.models.Timer;
 import java.util.Observable;
 import java.util.Observer;
 
-/* JADX INFO: loaded from: classes.dex */
 public class ClockFragment extends BaseFragment implements Observer {
     protected int mClockId;
     protected Timer mTimer;

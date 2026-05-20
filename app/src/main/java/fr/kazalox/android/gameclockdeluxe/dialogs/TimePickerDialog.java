@@ -17,7 +17,6 @@ import fr.kazalox.android.gameclockdeluxe.utils.TimeUtils;
 import fr.kazalox.android.gameclockdeluxe.views.DigitPad;
 import java.util.LinkedList;
 
-/* JADX INFO: loaded from: classes.dex */
 public class TimePickerDialog extends BaseDialogFragment implements View.OnClickListener, DigitPad.DigitPadListener {
     private Button mBtOk;
     private int mCallbackId;

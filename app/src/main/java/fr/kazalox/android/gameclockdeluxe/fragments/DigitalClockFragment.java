@@ -24,7 +24,6 @@ import fr.kazalox.android.gameclockdeluxe.utils.TimeUtils;
 import java.util.Observable;
 import java.util.Observer;
 
-/* JADX INFO: loaded from: classes.dex */
 public class DigitalClockFragment extends ClockFragment implements View.OnTouchListener, View.OnLongClickListener, Observer, ViewTreeObserver.OnPreDrawListener {
     private static final float PADDING = 0.68f;
     private boolean mAlwaysShowColon;

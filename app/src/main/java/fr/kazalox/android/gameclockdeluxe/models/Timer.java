@@ -12,7 +12,6 @@ import fr.kazalox.android.gameclockdeluxe.data.Mode;
 import java.io.Serializable;
 import java.util.Observable;
 
-/* JADX INFO: loaded from: classes.dex */
 public class Timer extends Observable implements Serializable {
     public static final int DELAY_BETWEEN_UPDATES = 100;
     private static int sSerial = 0;

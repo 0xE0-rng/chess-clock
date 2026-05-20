@@ -31,7 +31,7 @@ A modernized Android port of **Game Clock Deluxe** (originally `fr.kazalox.andro
 
 Game Clock Deluxe was the best chess clock app on Android. It had a clean dark UI, supported all the major time control formats (Fischer, Bronstein, FIDE, Sudden Death, Hour Glass, and more), and just worked. Unfortunately the app is no longer maintained and stopped functioning correctly on Android 10 and newer — making it unusable on any modern device.
 
-Rather than go without, this project was created to produce a version that runs correctly on current Android devices (API 35 / Android 15).
+Rather than go without, this project was created with AI assistance to produce a version that runs correctly on current Android devices (API 35 / Android 15).
 
 ## What changed from the original
 

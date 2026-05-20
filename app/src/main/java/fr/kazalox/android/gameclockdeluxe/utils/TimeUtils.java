@@ -2,7 +2,6 @@ package fr.kazalox.android.gameclockdeluxe.utils;
 
 import fr.kazalox.android.gameclockdeluxe.C;
 
-/* JADX INFO: loaded from: classes.dex */
 public class TimeUtils {
     public static int[] splitTime(int time) {
         int r = time % 3600;

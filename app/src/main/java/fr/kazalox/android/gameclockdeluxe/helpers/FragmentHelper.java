@@ -6,7 +6,6 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentTransaction;
 import fr.kazalox.android.gameclockdeluxe.R;
 
-/* JADX INFO: loaded from: classes.dex */
 public class FragmentHelper {
     public static void add(FragmentActivity activity, Class fragmentClass, int containerId) {
         add(activity, fragmentClass, containerId, null, null);

@@ -6,7 +6,6 @@ import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.WindowManager;
 
-/* JADX INFO: loaded from: classes.dex */
 public class SwipeDetector implements GestureDetector.OnGestureListener {
     private float mDpi;
     private SwipeListener mSwipeListener;
