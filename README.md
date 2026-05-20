@@ -8,6 +8,25 @@
 
 A modernized Android port of **Game Clock Deluxe** (originally `fr.kazalox.android.gameclockdeluxe`) by Kazalox — my all-time favorite chess clock app, brought back to life for current Android versions.
 
+## Features
+
+**Time control modes**
+- **Sudden Death** — each player has a fixed time for the whole game
+- **Fischer** — a time increment is added after each move
+- **Bronstein** — delay variant where unused increment time is not accumulated
+- **Simple delay** — clock only starts counting down after the delay expires
+- **Hour Glass** — time lost by one player is added to the other
+- **Time per Move** — clock resets to the full time each move
+- **FIDE** — two-period control with configurable moves, period times, and delay
+
+**General**
+- Two independent clocks with tap-to-switch
+- Pause by long-pressing or swiping anywhere on screen
+- Move counter
+- Negative countdown (clock keeps going after time expires)
+- Sound and vibration feedback
+- Multiple visual themes including digital and analog displays
+
 ## Why this exists
 
 Game Clock Deluxe was the best chess clock app on Android. It had a clean dark UI, supported all the major time control formats (Fischer, Bronstein, FIDE, Sudden Death, Hour Glass, and more), and just worked. Unfortunately the app is no longer maintained and stopped functioning correctly on Android 10 and newer — making it unusable on any modern device.
